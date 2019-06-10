@@ -1,0 +1,54 @@
+header {
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    height: 200px;
+    width: 50%;
+}
+
+.letters {
+    border: 3px solid black;
+    font-size: 100px;
+    text-align: center;
+    margin: 50px auto;
+    height: 150px;
+    width: 50%;
+
+}
+
+.correctGuess {
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    height: 150px;
+    width: 50%;
+}
+
+.wrongGuess {
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    height: 150px;
+    width: 50%;
+}
+
+.numtries {
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    height: 150px;
+    width: 50%;
+}
+
+.incompleteAns {
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    height: 150px;
+    width: 50%;
+}
