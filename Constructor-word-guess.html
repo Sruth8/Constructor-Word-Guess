@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
     <title>Constructor Word Guess</title>
 
 </head>
@@ -14,79 +16,97 @@
 <body>
 
 
+   <!-- Main Bootstrap container -->
+<div class="container">
+	<!-- Jumbotron title -->
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Most Famous Spaceships (fiction)</h1>
+			<h2>Guess the top 10 spaceships.</h2>
+			<h3>Note! some words have spaces</h3>
+			<small>Start Game: press a Key!</small>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12">
+
+			
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong>Guess the Ship</strong></h3>
+				</div>
+				<div class="panel-body">
+					<!-- This h3 section called wordblanks is what we'll be replacing with letters as the user guesses.-->
+					<h3 id="under-scores">_ _ _ _ _ _ _ _ _ </h3>
+				</div>
+			</div>
+
+			
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<!-- This span section called userGuesses is where we will be dumping the wrong guesses.-->
+					<strong>Letters Guess: </strong> <span id="guess-letter"></span>
+				</div>
+			</div>
+
+			
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<!-- This span called guessesLeft is where we will be dumping the number of guesses left.-->
+					<strong>Guesses Left: </strong> <span id="remaining-guess">9</span>
+				</div>
+			</div>
 
 
 
-    <div class="contaniner">
-        <header>
-            <h1>Word Guess</h1> <br>
-            <h3>Most Famous Space Ships</h3>
-        </header>
+            <div class="panel panel-default">
+				<div class="panel-body">
+					<!-- This span called guessesLeft is where we will be dumping the number of guesses left.-->
+					<strong>Wrong Guesses: </strong> <span id="wrong-guess">0</span>
+				</div>
+			</div>
 
-        <div class="wordToGuess"> </div>
+			<!-- Fourth Panel: Holds the number of Wins. -->
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<!-- This span called winCounter is where we'll be dumping the number of wins.-->
+					<strong>Wins: </strong> <span id="num-wins">0</span>
+				</div>
+			</div>
 
-        <div class="letters">
-            <h3 id="under-scores">-------</h3>
-        </div>
+			<!-- Fifth Panel: Holds the number of Losses. -->
+			<div class="panel panel-default">
+				<div class="panel-body">
+				 	<!-- This span called winCounter is where we'll be dumping the number of wins.-->
+				 	<strong>Losses: </strong> <span id="num-losses">0</span>
+				</div>
+			</div>
+		</div>
+	</div>
 
-        <div class="correctGuess">
-            <h2 id="guess-word"> Guess</h2>
-
-        </div>
-
-
-        <div class="wrongGuess">
-            <h2 id="wrong-letter"> Wrong Guess</h2>
-        </div>
-
-
-
-        <div class="numtries">
-            <h2 id="num-tries"> Guesses Left</h2>
-
-        </div>
-
-        <div class="incompleteAns">
-            <h2 id="incomplete-ans"> Not complete</h2>
-        </div>
-
-        <div class="numWins">
-            <h2 id="num-wins"> Winning: </h2>
-        </div>
-
-        <div class="numLosses">
-            <h2 id="num-loss"> Winning: </h2>
-        </div>
+</div>
+ 
 
 
-    </div>
-    
-    
-    
-    
     <script type="text/javascript" src="assets/js/java.js"></script>
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
 
-<!-- <div class="contaniner">
-        <header>
-            <h1>Word Guess</h1> <br>
-            <h3>Most Famous Space Ships</h3>
-        </header>
 
-        <div class="wordToGuess">  </div>   
-    <div class="letters">-------</div>
-    <div class="correctGuess">Correct Guess</div>
-    <div class="wrongGuess">Wrong Guess</div>
-    
-    </div>
-    <script type="text/javascript" src="assets/js/java.js"></script>
-    -->
 </body>
 
 </html>
